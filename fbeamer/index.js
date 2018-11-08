@@ -1,5 +1,7 @@
 'use strict';
 
+// Main module to interact with Facebook messenger platform
+
 const crypto = require('crypto');
 const axios = require('axios');
 const apiVersion = 'v3.2';
@@ -21,7 +23,6 @@ class FBeamer {
 
   registerHook(req, res) {
     const params = req.query;
-    console.log(params);
     const mode = params['hub.mode'];
     const token = params['hub.verify_token'];
     const challenge = params['hub.challenge'];
