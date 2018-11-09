@@ -45,7 +45,7 @@ app.post('/', (req, res, next) => {
             await f.txt(data.sender, 'Have a nice day :)');
             break;
           case 'Help':
-            await f.txt(data.sender, 'You can ask me about the weather in a location, e.g. What is the weather like in new york?\nYou can also ask me about the weather tomorrow, e.g. Is it sunny in new york tomorrow?');
+            await f.txt(data.sender, '1. You can ask me about the weather in a location, e.g. "What is the weather like in new york?"\n\n2. You can also ask me about the weather tomorrow, e.g. "Is it sunny in new york tomorrow?"');
             break;
           default:
             await f.txt(data.sender, 'I don\'t know what you mean :(');
